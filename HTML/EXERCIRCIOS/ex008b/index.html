@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <h4>Código(fonte monoespaçada) que tonar mais facil a leitura do texto no site, dando o mesmo espaçamento para cada letra usando a tag <q>CODE</q>.</h4>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em línguagem JavaScript.</p>
+    <pre>
+        <code>
+    num - int(input('digite um número'))
+    if num % 2 == 0:
+        print(f'0 número {num} é PAR')
+        else:
+        print(f'O número {num} é ÍMPAR')
+    print('fim do programa')
+        </code>
+    </pre>
+    <p>
+        Uso da tag "pre" é usado para formatar o texto conforme está o "code", pode ser usado para substituir a necessidade do uso da tag "br" dentro do "code".
+        Dentro da tag "pre" pode-se usar o atalho shift+tab para ajusatar o espaceamento lateral ou usar apenas a tecla tab para aumentar o espaceamento lateral, mas em ambas as situações é necessário primeiro selecionar o texto.
+    </p>
+    <h2>Citações</h2>
+    <h3>Sem quebra de linha</h3>
+    <p>Para fazer citações que não possuem  quebra de linha, nós usamos a tag "q".</p>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q>.</p>
+    <h3>Citações com quebra de linha</h3>
+    <p>Para fazer citações com quebra de linhas nós usamos a tag "blockquote", que faz a citação com um espaceamento lateral. Dentro desta tag podemos usar "cite" e colocarmos o link original da citação.</p>
+    <p>Segundo Alexandre Dumas, no seu livro O Conde de Monte Cristo:</p>
+    <blockquote cite="https://www.pensador.com/frases_de_livros_inspiradoras_marcantes/">
+        A vida é uma tempestade (...) Um dia você está tomando sol e no dia seguinte o mar te lança contra as rochas. O que faz de você um homem é o que você faz quando a tempestade vem.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Para mostrar o siginifacado das abreviações nos podemos usar a tag "abbr" e colocar o significado de cada abreviação, com isso é só a pessoa passar o mouse em cima da abreviação que irá aparcer o significado.</p>
+    <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML5</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+    <h2>Texto invertido</h2>
+    <p>Para fazer o texto invertido nos usamos a tag "bdo" e selecionando o "bdo:r".</p>
+    <bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo>
+    <P>NÃO SERVE PARA NADA.</P>
+
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+ </head>
+ <body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simpleste aumente e dimnua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Mídias</h1>
+
+    <p>Vamos aprender a reproduzir audios em HTML5.</p>
+    <p>Temos algmas formas de fazer isso, uma delas é usando a tag "<strong>audio</strong>" e alguns "<strong>source</strong>". Neste caso nós iremos usar o "<strong>source:media:type</strong>" visto que iremos usar uma mídia (áudio). <br> Iremos ver abaixo duas formas de usar o áudio no site, uma mais simples e outras que utilizamos varios formatos do arquivo para que ele seja compativel com o maximo de navegadores. Caso o navegador não sejá capaz de ler as mídias, podemos deixar o link para download.</p>
+    <p>
+      <ul>
+         <ul>&lt;audio src="midias/timetospare-anjone.mp3" autoplay controls>&lt;/audio&gt;</ul>
+         <ul>
+            &lt;audio preload="metadata" controls autoplay loop>
+               <ul>&lt;source src="midias/ulcereggaeton-anjone.mp3" type="audio/mpeg"&gt;</ul>
+               <ul>&lt;source src="midias/ulcereggaeton-anjone.ogg" type="audio/ogg"&gt;</ul>
+               <ul>&lt;source src="midias/ulcereggaeton-anjone.wav" type="audio/wav"&gt;</ul>
+               <ul>&lt;p>Caso o seu navegador não reproduza o áudio, &lt;a href="midias/ulcereggaeton-anjone.mp3" download="ulcereggaeton-anjone.mp3" type="audio/mpeg">clique aqui para baixar.&lt;/a>&lt;/p&gt;</ul>
+            &lt;/audio&gt;
+         </ul>
+      </ul>
+    </p>
+
+    <audio src="midias/timetospare-anjone.mp3" autoplay controls></audio>
+    <audio>
+       <source src="midias/ulcereggaeton-anjone.mp3" type="audio/mpeg">
+       <source src="midias/ulcereggaeton-anjone.mp3" type="audio/ogg">
+       <source src="midias/ulcereggaeton-anjone.mp3" type="audio/wav">
+       <p>Caso o seu navegador não reproduza o áudio, <a href="midias/ulcereggaeton-anjone.mp3" download="ulcereggaeton-anjone.mp3" type="audio/mpeg">clique aqui para baixar.</a></p>
+    </audio>
+    <p>
+       Vamos enter os principais tributos da tag "<strong>audio</strong>" antes de mais nada. <br>
+       <ul>
+          <li>O tributo <strong>preload</strong> indica se o áudio será pré-carrgado ou não e aceita até três valores:</li>
+          <ul>
+             <li><em>metadata</em>, vai carregar as informações sobre o arquivo (tamanho, tempo). </li>
+             <li><em>none</em>, não vai carregar nada até que o usuario clique no botão play.</li>
+             <li><em>aulo</em>(padrão), vai carregar o arquivo do audio inteirio assim que o site for carregado.</li>
+          </ul>
+          <li>O atributo <strong>controls</strong> vai apresentar o player na tela, caso não sejá colocado dentro da tag "<strong>audio</strong>" o player não irá aparecer.</li>
+          <li>O atributo <strong>autoplay</strong> vai iniciar a reprodução do áudio assim que a página for carregada.</li>
+          <li>O atributo <strong>loop</strong> vai fazer com que o áudio seja repetido eternamente.</li>
+       </ul>
+       Dentro da tag "<strong>audio</strong>" colocamos varios "<strong>source</strong>" com formatos diferentes do mesmo áudio.
+    </p>
+
+
+ </body>
+ </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de texteos</title>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h6>Uso de atalho: <br> Procure usar o atalho Ctrl+Shift+P (Quebra libra com abreviação ou Wrap with Abbreviation), este atalho vai te ajudar a ser mais rapido no uso das tags.</h6>
+    <h2>Negrito ou destaque</h2>
+    <p>Primeiramente, exitem duas maneiras de colocar uma palavra em negrito, de uma maneira não semântica e de uma maneira semântica.</p> <p> A "não semântica" é simplesmente pela forma, como o exemplo abaixo mostra: <br> Nessa frase, temos um <b>termo em negrito</b> usando a tag "B".</p>
+    <p>Já a "semântica" usa o significado, conforme o exemplo abaixo: <br>Nesta frase, temos um <strong>termo em destaque</strong> usando a tag "STRONG".</p> 
+    <h2>Itálico ou ênfase</h2>
+    <p>Igual as palavras em negrito, as palavras em itálico existem formas semânticas e não semânticas.</p>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag "I"(não semântica).</p>
+    <p>Nesta frase, temos um <em>termo em destaque</em> usando a tag "EM"(semântica).</p>
+<h2>Uso da tag "B" e "I".</h2>
+<p>Visualmente não exite nenhum difença entre as tags semântica e não semântica de itálico e negrito, mas apesar disso, a tag "B" e "I" ela fazem parte do HTML4. Agora nós estamos no HTML5, que é focado na semântica, então, evite usar as tags sem semântica, porque ela podem derrepente parem de ser usadas, dito isto, procure usar as tags semânticas, ou seja, as tags "STRONG" e "EM".</p>
+<h2>Texto marcado</h2>
+<p>Podemos criar também <mark style="background-color: rgb(215, 228, 38);">um texto marcado</mark> usando a tag "MARK". <br> E você pode alterar a cor do marcador de texto suando a tag <mark style="background-color: deeppink;">"STYLE"</mark> dentro da tag inicial <mark style="background-color: lawngreen;">"MARK"</mark>. <br> Ficando a tag assim: <br> O ceú é &lt;mark style="background-color: rgb(7, 157, 245);"> <mark style="background-color: rgb(0, 195, 255);">azul</mark> &lt;/mark&gt;.</p>
+<p>Mas e se eu quiser colocar todas as tags "MARK" em uma cor que não seja em amarelo, que é a padrão, vou ter que selecionar uma por uma? <br> Uma opção é você ir no cabeçalho do código, em baixo de "TITLE", e colocar a tag "STYLE", depois coloque a tag "MARK" e adicione um seletor ( { } ), então dentro do seletor você vai colocar "background-color" e escolher qual cor você quer. <br> Vejá abaixo como fica:</p>
+<p> &lt;title>Exemplo&lt;/title&gt; <br>
+&lt;style&gt; <br>
+    mark <br>
+    { <br>
+        background-color: red; <br>
+    } <br>
+&lt;/style>
+<h5>Lembrando, essa tag tem que ser feita no cabeçalho.</h5></p>
+<h2>Texto grande e pequeno</h2>
+<p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> neste paragráfo. <br> Usamos a tag "BIG" para letra grande e "SMALL" para letra pequena. Mas a tag "BIG" está em vermelha, o que nos diz que está tag esta obsoleta e logo mais deixará de funcionar. Então, não se deve usar a tag "BIG" para ter letras grandes.</p>
+<h2>Texto deletado</h2>
+<p>Podemos marcar <del>um texto como excluido(deletado)</del> para indicar que ele deve ser lido, mas não considerado. <br> Usando a tag "DEL".</p>
+<h2>Texto inserido</h2>
+<p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adiconado depois. <br> Usando a tag "INS".</p>
+<p>Existe também o <u>sublinhado</u> usando a tag "U" que é a forma não semântica.</p>
+<h2>Texto sobreescrito</h2>
+<p>Para inserir coisas do tipo "x<sup>20</sup>+3". <br> Para isso usamos a tag "SUP". SUP é em cima. <br> A tag fica assim: x&lt;sup>20&lt;/sup&gt;+3.</p>
+<h2>Texto subscrito</h2>
+<p>Para inserir coisas do tipo "H<sub>2</sub>O" <br> Para isso usamos a tag "SUB". SUB é em baixo. <br> A tag fica assim: H&lt;sub>2&lt;/sub>O. </p>
+
+
+</body>
+</html>

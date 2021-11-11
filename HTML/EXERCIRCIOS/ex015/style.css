@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body {
+    background-color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;font-size: 15px; 
+}
+h1 {
+    color: chocolate;
+    background-color: rgb(230, 217, 201);
+}
+h2 {
+    color: darkred;
+    background-color: rgb(195, 248, 115);
+}
+p {
+    text-align: justify;
+}

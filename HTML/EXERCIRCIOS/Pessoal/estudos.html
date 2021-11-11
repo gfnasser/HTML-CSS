@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Icons8.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Resumo HTML e CSS</title>
+</head>
+<body>
+    <h1>1) Parágrafo e quebra de linha.</h1>
+    <hr>
+    <p>Você pode escrever um parágrafo de qualquer jeito, basta colocar tudo no meio do par de tags  &lt;p&gt; e &lt;/p&gt;. <br>
+    Sendo &lt;p&gt; o inicio do parágrafo. <br>
+    Sendo &lt;/p&gt; o final do parágrafo.</p>
+    <p>Se você precisar quebrar o texto em algum lugar específico você precisa usar a tag &lt;br&gt;.</p>
+    <p>Ex: <br>
+    Maria foi ao mercador,&lt;br&gt;<br> mas esqueceu a carteira.</p>
+    <p>Dessa maneira descrita acima vai ficar mais facil de entender como funciona o uso da tag &lt;br&gt;. <!-- Essa tag serve para colocoar comentarios, esses comentartio não aparecem no site --></p>
+    <hr>
+    <h1>2) Tags iniciais.</h1>
+    <p>Algumas das tags que já foram apresentadas.Todas elas são usadas em minúsculo.</p>
+    <p>p= Parágrafo <br>
+    br= Quebra de linha <br>
+    title= titulo que aparece na parte superior do anvegador <br>
+    h1= Tema ou titulo do que vai ser escrito (resumidamente) <br>
+    hr= Linha horizontal <br>
+    (&)8lt; e (&)8gt;= Serve para mostrar as tags usadas nos textos. <br>
+    < !-- -->= Serve para colocar um comentário, esse comentário não aparece no site. <br>
+    &#x= É usados para adicionar emoji, você usa essa tag mais o código do emoji e finaliza com ponto e vírgula (;). </p>
+    <hr>
+    <h1>3) Simbolos especiais</h1>
+    <p>Alguns dos simbolos especiais:</p>
+    &reg;<br>&copy;<br>&trade;<br>&euro;<br>&pound;<br>&yen;<br>
+    <p>Agora, como colocar os simbolos especiais? <br>
+    Basta digitar as tags conforme imagem abaixo. <br>
+    <img src="https://icatchwebtutorials.files.wordpress.com/2012/06/xml-entity-reference.png" alt=""><br>
+    Caso queira ter acessos a mais simbolos especiais, basta acessar o site: https://www.w3schools.com/tags/ref_charactersets.asp </p>
+    <p>Vamos adicionar alguns emoji: <br>
+    <br>
+    &#x1F596; <br>&#x1F913; <br>&#x1F9D0; <br>&#x1F916; <br>
+    <br>
+    Mas como eu faço para adiconar os emojis? <br>
+    <br> Para consegui adicionar os emojins você vai precisar usar a tag &#x mais o código do emoji. E aonde eu consigo o codigos dos emojis? No site https://emojipedia.org/ você tem acesso ao código de todos os emoji. <br>
+    <br> Por exemplo: <br>
+    <br> Para colocar o emoji "nerd face" eu acessei o site emojipedia e escolhi o que eu queria, depois eu peguei o codigo do emoji, no caso do "nerd face" o código era 1F913. Depois de pegar o código é só usar a tag mencionada acima, ficando assim: & #x1F913, o resultado é &#x1F913;.
+    </p>
+    <hr>
+    <h1>4) Usando imagens no site</h1>
+    <p>Primeiro você precisa escolher uma imagem, e lembre-se de tomar cuidado com o tamanho da imagem e o direito autoral dela. Escolha imagens que sejam livres para uso ou de sua prorpia criação. <br>
+    Após escolher as imagens, salve elas na pasta do arquivo HTML, caso elas estejam muito grande, basta redimensionar usando o GIMP. <br>
+    Após ter feito isso, você vai precisar usar a tag "img", basta escrever essas três letras e apertar enter, que irá aparecer a tag completa, assim: &lt;img src="" alt=""&gt;. Interessante é saber o que significa src e alt, resumidamente src é "origem de imagem" e alt é "texto que explica a imagem". <br>
+    Para usar as imagens que salvamos na pasta, vamos utilizar um atalho para tornar mais prático, que é o Ctrl+Backspace. </p>
+    <p>Vamos começar carregando uma imagem que está na pasta. <br>
+    <img src="logo1.png" alt="Logo 1"> <br>
+    O código fica assim: <br> <code>&lt;img src="logo1.png" alt="Logo 1"&gt;</code></p>
+    <br>
+    <p>Agora vamos carregar uma imagem que está na sub-pasta (uma pasta criada dentro de outra). <br>
+    <img src="imagem/logo2.png" alt="Logo 2"> <br>
+    O código fica assim: <br> <code>&lt;img src="imagem/logo2.png" alt="Logo 2"&gt;</code></p>
+    <br>
+    <p>Por último, vamos carregar uma imagem da internet utilizando o link da imagem. <br>
+    <img src="https://styles.redditmedia.com/t5_2tugi/styles/communityIcon_7yzrvmem0wi31.png" alt="Logo internet"> <br>
+    O código fica assim: <br> <code>&lt;img src="https://styles.redditmedia.com/t5_2tugi/styles/communityIcon_7yzrvmem0wi31.png" alt="Logo internet"&gt;</code></p>
+    <br>
+    <p>Com isso nós vimos como podemos colocar imagem em nosso site. <br> Fique sempre atento a dimensão da imagem, tamanho do arquivo e se você tem direito de usa-lá.</p>
+    <hr>
+    <h1>5) Colocando uma Favicon no site ou ícone de favoritos</h1>
+    <p>Favicon é o ícone que aprece quando acessamos um site, como o YouTube, Facebook, Google e outros sites. Para exemplificar, observe a imagem abaixo, nela está marcado em vermelho o site que não tem uma favicon e está marcado com verde os sites que possuem favicon. <br> <img src="EX favicon.png" alt="Exemplo de sites com favicon e sem favicon"> <br> Agora que sabemos o que é uma favicon, precisamos saber como fazer um. <br> Primeiramente, precisamos escolher uma imagem em PNG e de preferencia que não tenha muitos detalhes. Após escolher a imagem precisamos transforma o formato de PNG para ICO. <br> Você pode tanto criar a sua imagem que será transformada em favicon, quanto buscar em sites na internet que possuem diversos favicon, sites como www.icoarchive.com posuem diversos modelos de favicon, mas lembre-se sempre de baixar a imagem no formato ICO. <br> Caso você queira criar o seu favicon, você pode usar o site www.favicon.cc. <br> Também é possivel pegar a imagem(ícone) que você escolheu e tranformar ele em um arquivo ICO, você pode usar o site www.favicon.io. Neste site é possivel tranformar até um texto em favicon, das opções de criação de favicon, essa é a mais Interessante. <br> <br> Lembre-se sempre de salvar as imagens na pasta do arquivo HTML.</p>
+    <p>Mas como tonar a imagem em uma favicon?</p>
+    <p>No inicio do arquivo HTML, dentro de &lt;head&gt;&lt;/head&gt; ou aréa de cabeças, em cima de &lt;title&gt;&lt;/title&gt;, você vai digitar a palavra "link" e escolher a opção "link:favicon". Feito isso irá aparecer a tag &lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon"&gt;. Dentro de "favicon.ico" você irá apagar esse texto e apertar Ctrl+BackSpace(atalho rápido), então irá aparecer os ícones que você salvou dentro da pasta do arquivo HTML, agora é só escolher qual favicon você irá querer usar. <br> Tendo feito isso, a tag fica assim: &lt;link rel="shortcut icon" href="Icons8.ico" type="image/x-icon"&gt; <br> <br> Pronto, agora temos uma favicon.</p>
+    <hr>
+    <h1>6) Hierarquia de Títulos</h1>
+    <p>Hierarquia de títulos são temas e subtítulos dentro de um texto. <br> Para entender melhor, observe a imagem abaixo:     <br> <img src="TEMA E SUBTEMA EX1.png" alt="Exemplo de título e subtítulo"></p> <p>Na imagem nós conseguimos ver que o texto possui um título e quatro subtítulo. Mas como eu faço isso na hora de digitar o código?    <br> Assim como quando vamos colocar o título no texto usamos "h1", para colocar os subtítulos iremos usar "h2", "h3", "h4", "h5" e "h6". Cada um representa um nível, é necessário respeitar os níveis do "h1" ao "h6". Veja abaixo como fica o uso do título e subtítulos, depois observe uma imagem mais explicativa. <br>  <h1>DESENVOLVIMENTO</h1> <h2>TÍTULO SECUNDÁRIO</h2>  <h3>TÍTULO TERCIÁRIO</h3> <h4>TÍTULO QUATEMÁRIO</h4>     <H5>TÍTULO QUINÁRIO</H5> <br> <img src="TEMA E SUBTEMA EX2.png" alt="Exemplo de título e subtítulo"></p> <br> Essa é a hierarquia de títulos que deve ser seguida sempre que for digitar um texto. Sobre editar o formato do texto, iremos ver isso mais para frente em CSS.      <br> <hr>
+    <h1>7) Semãntica</h1>
+    <p>Semãntica nada mais é que o significado, e no HTML5 nós só trabalhamos com o significado, ou seja, suas tags tem um significado. Como por exemplo: <br>Juvenal era um sujeito de muita sorte. E já começou desde pequeno onde morou, na &lt;address&gt;<address>Rua Assunção, 349, araçás, Vila Velha-ES</address>&lt;/address&gt; um local de facil acesso ao Centro da Cidade.<br><br> Quando eu adiciono a tag "address" eu estou chamando a a atenção para o endereço de Juvenal, tanto que o endereço dele ficou me itálico. No caso, um navegar de celular pode até sugerir que você veja o mapa do local e trace a rota para chegar lá. Isso é dar significado.</p>
+    <h1>Principais formatações</h1>
+    <h6>Uso de atalho: <br> Procure usar o atalho Ctrl+Shift+P (Quebra libra com abreviação ou Wrap with Abbreviation), este atalho vai te ajudar a ser mais rapido no uso das tags.</h6>
+    <h2>Negrito ou destaque</h2>
+    <p>Primeiramente, exitem duas maneiras de colocar uma palavra em negrito, de uma maneira não semântica e de uma maneira semântica.</p> <p> A "não semântica" é simplesmente pela forma, como o exemplo abaixo mostra: <br> Nessa frase, temos um <b>termo em negrito</b> usando a tag "B".</p>
+    <p>Já a "semântica" usa o significado, conforme o exemplo abaixo: <br>Nesta frase, temos um <strong>termo em destaque</strong> usando a tag "STRONG".</p> 
+    <h2>Itálico ou ênfase</h2>
+    <p>Igual as palavras em negrito, as palavras em itálico existem formas semânticas e não semânticas.</p>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag "I"(não semântica).</p>
+    <p>Nesta frase, temos um <em>termo em itálico</em> usando a tag "EM"(semântica).</p>
+    <h2>Uso da tag "B" e "I".</h2>
+    <p>Visualmente não exite nenhum diferença entre as tags semântica e não semântica de itálico e negrito, mas apesar disso, a tag "B" e "I" ela fazem parte do HTML4. Agora nós estamos no HTML5, que é focado na semântica, então, evite usar as tags não semânticas, porque elas podem derrepente pararem de serem usadas, dito isto, procure usar as tags semânticas, ou seja, as tags "STRONG" e "EM".</p>
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também <mark style="background-color: rgb(215, 228, 38);">um texto marcado</mark> usando a tag "MARK".     <br> E você pode alterar a cor do marcador de texto usando a tag <mark style="background-color: deeppink;">"STYLE"</mark> dentro da tag inicial <mark style="background-color: lawngreen;">"MARK"</mark>. <br> Ficando a tag assim: <br> O ceú é &lt;mark style="background-color: rgb(7, 157, 245);">  <mark style="background-color: rgb(0, 195, 255);">azul</mark> &lt;/mark&gt;.</p>
+    <p>Mas e se eu quiser colocar todas as tags "MARK" em uma cor que não seja em amarelo, que é a padrão, vou ter que selecionar uma por uma? <br> Uma opção é você ir no cabeçalho do código, em baixo de "TITLE", e colocar a tag "STYLE", depois coloque a tag "MARK" e adicione um seletor ( { } ), então dentro do seletor você vai colocar "background-color" e escolher qual cor você quer. <br> Vejá abaixo como fica:</p>
+    <p> &lt;title>Exemplo&lt;/title&gt; <br>
+    &lt;style&gt; <br>
+    mark <br>
+    { <br>
+        background-color: red; <br>
+    } <br>
+    &lt;/style>
+    <h5>Lembrando, essa tag tem que ser feita no cabeçalho.</h5></p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um  <small>texto pequeno</small> neste paragráfo. <br> Usamos a tag "BIG" para letra grande e "SMALL" para letra pequena. Mas a tag "BIG" está em vermelho, o que nos diz que está tag esta obsoleta e logo mais deixará de funcionar. Então, não se deve usar a tag "BIG" para ter letras grandes.</p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluido(deletado)</del> para indicar que ele deve ser lido, mas não considerado. <br> Usando a tag "DEL".</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adiconado depois. <br> Usando a tag "INS".</p>
+    <p>Existe também o <u>sublinhado</u> usando a tag "U" que é a forma não semântica.</p>
+    <h2>Texto sobreescrito</h2>
+    <p>Para inserir coisas do tipo "x<sup>20</sup>+3". <br> Para isso usamos a tag "SUP". SUP é em cima. <br> A tag fica assim: x&lt;sup>20&lt;/sup&gt;+3.</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo "H<sub>2</sub>O" <br> Para isso usamos a tag "SUB". SUB é em baixo. <br> A tag fica assim: H&lt;sub>2&lt;/sub>O.</p>
+    <hr>
+    <h1>8) Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <h4>Código(fonte monoespaçada) que tonar mais facil a leitura do texto no site, dando o mesmo espaçamento para cada letra usando a tag <q>CODE</q>.</h4>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em línguagem JavaScript.</p>
+    <pre>
+        <code>
+    num - int(input('digite um número'))
+    if num % 2 == 0:
+        print(f'0 número {num} é PAR')
+        else:
+        print(f'O número {num} é ÍMPAR')
+    print('fim do programa')
+        </code>
+    </pre>
+    <p>
+        Uso da tag "pre" é usado para formatar o texto conforme está o "code", pode ser usado para substituir a necessidade do uso da tag "br" dentro do "code".
+        Dentro da tag "pre" pode-se usar o atalho shift+tab para ajusatar o espaceamento lateral ou usar apenas a tecla tab para aumentar o espaceamento lateral, mas em ambas as situações é necessário primeiro selecionar o texto.
+    </p>
+    <h2>Citações</h2>
+    <h3>Sem quebra de linha</h3>
+    <p>Para fazer citações que não possuem  quebra de linha, nós usamos a tag "q".</p>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q>.</p>
+    <h3>Citações com quebra de linha</h3>
+    <p>Para fazer citações com quebra de linhas nós usamos a tag "blockquote", que faz a citação com um espaceamento lateral. Dentro desta tag podemos usar "cite" e colocarmos o link original da citação.</p>
+    <p>Segundo Alexandre Dumas, no seu livro O Conde de Monte Cristo:</p>
+    <blockquote cite="https://www.pensador.com/frases_de_livros_inspiradoras_marcantes/">
+        A vida é uma tempestade (...) Um dia você está tomando sol e no dia seguinte o mar te lança contra as rochas. O que faz de você um homem é o que você faz quando a tempestade vem.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Para mostrar o siginifacado das abreviações nos podemos usar a tag "abbr" e colocar o significado de cada abreviação, com isso é só a pessoa passar o mouse em cima da abreviação que irá aparcer o significado.</p>
+    <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML5</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+    <h2>Texto invertido</h2>
+    <p>Para fazer o texto invertido nos usamos a tag "bdo" e selecionando o "bdo:r".</p>
+    <bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo>
+    <P>NÃO SERVE PARA NADA.</P>
+    <hr>
+    <h1>9) Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>A tag "ol" significa "ordem listas" ou "listas ordenadas", essa tag é usada em conjunto com a tag "li" para criar listas. Pode-se criar listas númericas, alfabeticas ou outras, para fazr isso colocamos dentro da tag "ol" a palavra "type" ai podemos escolher como ficará a nossa lista. Pode-se também escolher como ela irá começar, adicionando também a palavra "starte". Veremos a baixo como fica a tag usando todos estes recusos.</p>
+    <ol type="A" start="2">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para faculdade</li>
+        <li>Almoçar</li>
+        <li>Trabalhar</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+
+    <h2>Listas não Ordenadas</h2>
+    <p>A tag "ul" significa "lista desordenada" ou "lista não ordenada", essa tag é usada em conjunto com a tag "li" para criar listas não ordenadas. Pode-se usar "type="cycle", "disc" ou "square", dentri da tag "ul" para alterar o formato da lista não ordenada</p>
+    <ul type="square">
+    <li>Pão</li>
+    <li>Leite</li>
+    <li>Manteiga</li>
+    <li>Arroz</li>
+    <li>Feijao</li>
+    </ul>
+    <h2>Juntando listas 1.0</h2>
+    <h4>Criando listas e sublistas usando "ul" e "ol".</h4>
+    <h3>Minhas linguagens favoritas, antigas e novas.</h3>
+    <ol>
+    <li>Antigas</li>
+    <ol type="A">
+        <li>Climper</li>
+        <li>Visual basci</li>
+        <li>Fortran</li>
+        <li>Delphi</li>
+    </ol>
+    <li>Novas</li>
+    <ol type="A" start="5">
+        <li>PHP</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+    </ol>
+    </ol>
+    <h3>Meus videogames e jogos favoritos</h3>
+    <ol>
+    <li>videogames</li>
+    <ul type="square">
+        <li>PlayStation 3 e 4</li>
+        <li>SuperNintendo</li>
+        <li>DreamCast</li>
+    </ul>
+    <li>Jogos</li>
+    <ul type="disc">
+        <li>GrandChase</li>
+        <ul type="disc">
+            <li>Season 2</li>
+            <li>Chaos</li>
+        </ul>
+        <li>Super Mario World</li>
+    </ul>
+    </ol>
+    <h2>Lista de Definições</h2>
+    <p>Aqui iremos usar "dt"(Termo) e "dd"(Descrição) para deixar igual um dicionario.</p>
+    <ol>
+    <dt>HTML. "dt"</dt>
+    <dd>Linguagem de marcação para criação de conteudo de um site."dd"</dd>
+    <dt>CSS. "dt"</dt>
+    <dd>Linguagem de marcação para a criação de design de um site. "dd"</dd>
+    <dt>JavaScript. "dt"</dt>
+    <dd>Linguagem de programação para a criação de interatividade de um site. "dd"</dd>
+    </ol>
+    <hr>
+    <h1>10) Links e Âncoras em HTML5</h1>
+    <h2>Usando links externos</h2>
+    <h6>Para para linkar um texto a um site externo, nós envelopamos o texto que queremos linkar e usamos a tag "<strong>a</strong>", dentro de "<strong>href=</strong>" nós colocamos o link que queremos que a pessoa seja direcionada ao clicar.</h6>
+    <p>Para o link não sobrepor o seu site, dentro da tag "<strong>a</strong>", após o link do site, use "<strong>target="_blank</strong>"". <br> No exeplo abaixo não iremos usar essa função, para que assim você possa entender o que ancontece quando não usamos "<strong>target=</strong>"<strong>_blank</strong>"".</p>
+    <p>Você pode acessar o meu <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf">repositório público no Github</a>.</p>
+    <p><code>Você pode acessar o meu &lt;a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf">repositório público no Github&lt;/a>.</code></p>
+    <p>E para informar a natureza do link, nós podemos usar "rel=next, prev, author ou external, dentro da tag "a". <br> No exemplo abaixo estamos usando um link externo, ou seja, ao clicar nele você é direcionado a uma nova aba.</p>
+    <p>Você também pode acessar o meu <a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target="_blank" rel="external">canal gratuito no Youtube.</a></p>
+    <p><code>Você também pode acessar o meu &lt;a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target="_blank" rel="external">canal gratuito no Youtube.&lt;/a></code></p>
+    <h2>Usando links internos</h2>
+    <p>Links internos são links que fazem a ligação entre outras paginas do mesmo servidor.</p>
+    <p>Para criar uma nova página, basta ir em "<strong>explorador</strong>" no "<strong>VSC</strong>", dentro da pasta principal que você já esta digitando o código, e criar um novo "arquivo". Pronto, você agora tem uma nova página dentro do mesmo servidor. <br> Para fazer as transições entre as paginas nós usamos também a tag "a". Com essa tag nós conseguimos ir e voltar entre as páginas.</p>
+    <p>Está é a primeira página do meu site, se você quiser pode também visitar a minha <a href="pg2.html" rel="next" target="_self">segunda página.</a></p>
+    <p><code>Está é a primeira página do meu site, se você quiser pode também visitar a minha &lt;a href="pg2.html" rel="next" target="_self">segunda página.&lt;/a></code></p>
+    <p>No exemplo abaixo foi criado uma nova pasta chamada "noticias" dentro da pasta do "ex010", esssa pasta pode ser criada dentro do "<strong>VSC</strong>" usando o "<strong>explorador</strong>". A ideia é acessar uma página que está dentro de outra pasta. Nós conseguimos acessar essa pasta normlamente usando a tag "<strong>a</strong>", mas na hora de voltarmos para a página principal, vamos precisar adicionar na teg "a" em "<strong>href=</strong>" os seguintes sinais "<strong>../</strong>" assim vai tornar possivel retonarmos para a página principal que está em outra pasta.</p>
+    <p>Você também pode acessar a minha <a href="noticias/btc.html" rel="next" target="_self">página de noticias</a></p>
+    <p><code>Você também pode acessar a minha &lt;a href="noticias/btc.html" rel="next" target="_self">página de noticias&lt;/a></code></p>
+    <h2>Links para download</h2>
+    <p>Vamos ver como gerar links para download. Para fazer isso nós continuamos usando a tag "a", mas adicionamos outras infromações dentro da tag, como "<strong>download</strong>" e "<strong>type</strong>". Arquivos em PDF não são mais baixados automaticamente pelo navegador Google Chrome, no navegador você é levado a outra página que te da a opção de baixar o arquivo. Já utilizando arquivos em ZIP ou 7z, eles são baixados automaticamente.</p> <p>Mas como fica a teg quando vamos como colocar um link para download? <br> Primeiro vamos ver como fica a tag para baixar PDF e depois para baixar ZIP. <br> Acesse a lista do <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">MEDIA TYPES.</a></p>
+    <p><strong>1)</strong> <code>&lt;a href="Livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte." type="application/pdf" target="_blank" rel="external">Baixar o livro em pdf.&lt;/a&gt;</code></p>
+    <strong>2)</strong> <code>&lt;a href="Livro/10 - Ligações em toda parte.7z" download="10 - Ligações em toda parte.7z" type="application/7z">Livro compactado em zip.&lt;/a&gt;</code>
+    <ul>
+        <li><a href="Livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte." type="application/pdf" target="_blank" rel="external">Baixar o livro em pdf.</a></li>
+        <li><a href="Livro/10 - Ligações em toda parte.7z" download="10 - Ligações em toda parte.7z" type="application/7z">Livro compactado em zip.</a></li>
+    </ul>
+    <hr>
+    <h1>11) Mídias</h1>
+    <h2>Imagem dinâmica</h2>
+    <p>O que é uma imagem dinâmica? É uma imagem que se adapta ao dispositivo que está sendo usado, como por exemplo: computador, celular, tablet, entre outros. Essa imagem irá se adaptar a cada tamanho de tela, mas para isso acontecer nós precisamos ter a mesma imagem em diversos tamanhos, assim era ficará em uma boa resolução em cada dispositivo, evitando que tenha aquela barra lateral para conseguir ver a imagem como um todo. <br>
+    Mas como fazemos isso? Iremos usar a tag "<strong>picture</strong>". Dentro desta tag iremos colocar a imagem usando a tag "<strong>img</strong>", selecionares primeiro a nossa maior imagem. Após ter feito isso, usaremos a tag "<strong>source</strong>" para adicionar os diversos tamanho da mesma imagem. As imagens devem estar na mesma pasta para facilitar. Lembre-se de que nessa configuração de "<strong>source</strong>", os arquivos dentro desta tag devem ser colocados em ordem crescente, sendo que o maior arquivo tem que estar dentro da tag "<strong>img</strong>".</p>
+        <p>A tag completa fica assim: <br>
+        <ol>
+            <code>
+                <dt>&lt;<mark><strong>picture</strong></mark>&gt;</dt>
+                    <dd>&lt;<mark style="background-color: rgb(204, 73, 187);"><strong>source media</strong></mark>="(<mark style="background-color: rgb(253, 95, 95);"><strong>max</strong></mark>-width: 750px)" srcset="imagem/p.png" type="image/png"&gt;</dd>
+                    <dd>&lt;<mark style="background-color: rgb(204, 73, 187);"><strong>source media</strong></mark>="(<mark style="background-color: rgb(253, 95, 95);"><strong>max</strong></mark>-width: 1050px)" srcset="imagem/m.png" type="image/png"&gt;</dd>
+                    <dd>&lt;<mark style="background-color: lawngreen;"><strong>img</strong></mark> src="imagem/g.png" alt="imagem flexivel"&gt;</dd>
+                <dt>&lt;/<strong><mark>picture</mark></strong>&gt;</dt>
+            </code>
+        </ol>
+        </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagem/m.png" type="image/png">
+        <img src="imagem/g.png" alt="imagem flexivel">
+    </picture>
+    <h2>Áudio</h2>
+
+    <p>Vamos aprender a reproduzir audios em HTML5.</p>
+    <p>Temos algmas formas de fazer isso, uma delas é usando a tag "<strong>audio</strong>" e alguns "<strong>source</strong>". Neste caso nós iremos usar o "<strong>source:media:type</strong>" visto que iremos usar uma mídia (áudio). <br> Iremos ver abaixo duas formas de usar o áudio no site, uma mais simples e outras que utilizamos varios formatos do arquivo para que ele seja compativel com o maximo de navegadores. Caso o navegador não sejá capaz de ler as mídias, podemos deixar o link para download.</p>
+    <p>
+      <ul>
+         <code>
+             <ul>&lt;audio src="midias/timetospare-anjone.mp3" autoplay controls>&lt;/audio&gt;</ul>
+             <ul>
+                &lt;audio preload="metadata" controls autoplay loop>
+                   <ul>&lt;source src="midias/ulcereggaeton-anjone.mp3" type="audio/mpeg"&gt;</ul>
+                   <ul>&lt;source src="midias/ulcereggaeton-anjone.ogg" type="audio/ogg"&gt;</ul>
+                   <ul>&lt;source src="midias/ulcereggaeton-anjone.wav" type="audio/wav"&gt;</ul>
+                   <ul>&lt;p>Caso o seu navegador não reproduza o áudio, &lt;a href="midias/ulcereggaeton-anjone.mp3" download="ulcereggaeton-anjone.mp3" type="audio/mpeg">clique aqui para baixar.&lt;/a>&lt;/p&gt;</ul>
+                &lt;/audio&gt;
+             </ul>
+         </code>
+      </ul>
+    </p>
+    <audio src="midias/timetospare-anjone.mp3" preload="auto" autoplay controls loop
+    ></audio>
+    <audio>
+       <source src="midias/ulcereggaeton-anjone.mp3" type="audio/mpeg">
+       <source src="midias/ulcereggaeton-anjone.mp3" type="audio/ogg">
+       <source src="midias/ulcereggaeton-anjone.mp3" type="audio/wav">
+       <p>Caso o seu navegador não reproduza o áudio, <a href="midias/ulcereggaeton-anjone.mp3" download="ulcereggaeton-anjone.mp3" type="audio/mpeg">clique aqui para baixar.</a></p>
+    </audio>
+    <p>
+       Vamos entender os principais tributos da tag "<strong>audio</strong>" antes de mais nada. <br>
+       <ul>
+          <li>O tributo <strong>preload</strong> indica se o áudio será pré-carrgado ou não e aceita até três valores:</li>
+          <ul>
+             <li><em>metadata</em>, vai carregar as informações sobre o arquivo (tamanho, tempo). </li>
+             <li><em>none</em>, não vai carregar nada até que o usuario clique no botão play.</li>
+             <li><em>auto</em>(padrão), vai carregar o arquivo do audio inteirio assim que o site for carregado.</li>
+          </ul>
+          <li>O atributo <strong>controls</strong> vai apresentar o player na tela, caso não sejá colocado dentro da tag "<strong>audio</strong>" o player não irá aparecer.</li>
+          <li>O atributo <strong>autoplay</strong> vai iniciar a reprodução do áudio assim que a página for carregada.</li>
+          <li>O atributo <strong>loop</strong> vai fazer com que o áudio seja repetido eternamente.</li>
+       </ul>
+       Dentro da tag "<strong>audio</strong>" colocamos varios "<strong>source</strong>" com formatos diferentes do mesmo áudio.
+    </p>
+    <p><em>É importante saber que no Google Chrome não está funcionando o "<strong>autoplay</strong>".</em></p>
+    <h2>Vídeo</h2>
+    <p><strong>Inserindo videos hospedados localmente</strong></p>
+    <p>Para colocar vídeos nós usamos a tag "<strong>video</strong>". Com essa tag nós conseguimos colocar um video que já baixmamos no site, é importante nos atentarmos para o tamanho do arquivo, ele não pode ser muito grande, senão irá gastar muito plano de dados e o valor da hospedagem do site será muito caro.</p>
+    <p>É importante termo o video em varios formatos, pois alguns formatos não são suportados pelos navegadores, por isso usamos os formatos <em>mp4, m4v, webm e ogv</em>, com esses formatos conseguimos garantir que em grande parte dos navegadores o video será carregado. Para colocar todos este formatos, nos usamos dentro da tag "<strong>video</strong>" o "<strong>source:src</strong>", assim como foi feito ao colocarmos as imagens dinâmicas.</p>
+    <p>Iremos usar um <em>vídeo hospedado em nosso proprio servidor</em>, veja abaixo como fica o código:</p>
+    <code>
+        &lt;video controls loop width="500" poster="imagens/tambneio.jpg">
+            &lt;source src="videos/meus-videos.mp4" type="video/mp4">
+            &lt;source src="videos/meus-videos-1.webm" type="video/webm">
+            &lt;source src="videos/meus-videos.ogv" type="video/ogv">
+            &lt;source src="videos/meus-videos-1.m4v" type="video/m4v">
+            &lt;p>Seu computador não tem compatibilidade com reprodução de vídeos.&lt;/p>
+        &lt;/video>
+    </code>
+    <p>Como pode ver, dentro da tag "<strong>video</strong>" "<strong>controls</strong>", "<strong>width</strong>" e "<strong>poster</strong>". <br> Mas o que cada uma faz?
+    <ul>
+        <li><em>Controls:</em> Permite que o usuario dê play e pause no vídeo.</li>
+        <li><em>Width:</em> Reduz a resolução do video para que ele se encaixe melhor na tela.</li>
+        <li><em>Poster:</em> Coloca uma <strong>tambneio</strong> no video.</li>
+        <li><em>Loop:</em> Faz com que o video sempre reinicie quando acabar.</li>
+    </ul>
+    </p>
+    <video controls width="560" loop poster="imagem/tambneio.jpg">
+        <source src="videos/meus-videos.mp4" type="video/mp4">
+        <source src="videos/meus-videos-1.webm" type="video/webm">
+        <source src="videos/meus-videos.ogv" type="video/ogv">
+        <source src="videos/meus-videos-1.m4v" type="video/m4v">
+        <p>Seu computador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    
+    <h2>Inserindo vídeos do YouTube/Vimeo.</h2>
+    <p>Outra forma de colocarmos videos, é utilizando sites que são serviços de hospedagem de vídeos, como o YouTube e Vimeo. Dessa forma, <em>fica mais barato a hospedagem do site</em>, por que ele fica mais leve.</p>
+    <p>Para fazer isso, nós primiero escolher um video do YouTube, vamos em compartilhar e clicamos em incorporar, lá já vai ter o código HTML. Feito isto, basta colar o código. Utilizando os videos do YouTube, isso usa os dados do YouTube, fazendo com que o seu site fique mais barato(custo).</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/oaCFb_CvwJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+    <h2>Até aqui vimos uma introdução para o HTML5, mas agora iremos ver um pouco sobre <a href="css.html">CSS</a>.</h2>
+
+    
+</body>
+</html>

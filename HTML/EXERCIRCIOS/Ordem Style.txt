@@ -1,0 +1,25 @@
+ /*
+        Medidas absolutas:
+        cm, mm, in (polegada), px(recomendado), pt, pc
+
+        Medidas relativas:
+        em(recomendado)(altura do (M) maiusculo), ex(altura do x), rem, vw(largura da tela), vr(altura da tela), %
+        
+        16px é o padrão
+        16px geralmente é igual a 1em
+        */
+        /* 
+        font-family: 'work Sans', sans-serif;
+        font-size: 1em;
+        font-wight: bolder;
+        font-style: italic;
+        text-decoration: underline;
+        font: italic bolder 1em 'work Sans', sans-serif; (propriedade/shorthand)
+        */
+        /* weight(variações da fonte) - lighter, normal, bold, bolder, númerica(100% - 900%)
+        style - normmal, italic, negrit
+        decoretion - underline
+        */
+        /*Condençando a declaração/propriedade (shorthand)
+        Deve se seguir essa onder a baixo para funcionar a shorthand.
+        font-style -> font-weight -> font-size -> font-family */

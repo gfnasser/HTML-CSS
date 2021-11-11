@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <h6>Para para linkar um texto a um site externo, nós envelopamos o texto que queremos linkar e usamos a tag "a", dentro de "href=" nós colocamos o link que queremos que a pessoa seja direcionada ao clicar.</h6>
+    <h6>Para o link não sobrepor o seu site, dentro da tag "a", após o link do site, use "target="_blank"".</h6>
+    <p>Você pode acessar o meu <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">repositório público no Github</a>.</p> <br>
+    <p>E para informar a natureza do link, nós podemos usar "rel=next, prev, author ou external, dentro da tag "a".</p>
+    <p>Você também pode acessar o meu <a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target="_blank" rel="external">canal gratuito no Youtube.</a></p>
+
+    <h2>Usando links internos</h2>
+    <p>Links internos são links que fazem a ligação entre outras paginas do mesmo servidor.</p>
+    <p>Para criar uma nova página, basta ir em "explorador" no "VSC", dentro da pasta principal que você já esta digitando o código, e criar um novo "arquivo". Pronto, você agora tem uma nova página dentro do mesmo servidor. <br> Para fazer as transições entre as paginas nós usamos também a tag "a". Com essa tag nós conseguimos ir e voltar entre as páginas.</p>
+    <p>Está é a primeira página do meu site, se você quiser pode também visitar a minha <a href="pag002.html" rel="next">segunda página.</a></p> <br>
+    <p>No exemplo abaixo foi criado uma nova pasta chamada "noticias" dentro da pasta do "ex010", esssa pasta pode ser criada dentro do "VSC" usando o "explorador". A ideia é acessar uma página que está dentro de outra pasta. Nós conseguimos acessar essa pasta normlamente usando a tag "a", mas na hora de voltarmos para a página principal, vamos precisar adicionar na teg "a" em "href=" os seguintes sinais "../" assim vai tornar possivel retonarmos para a página principal que está em outra pasta.</p>
+    <p>Você também pode acessar a minha <a href="noticias/pague003.html" rel="next" target="_self">página de noticias</a></p>
+
+    <h2>Links para download</h2>
+    <p>Vamos ver como gerar links para download. Para fazer isso nós continuamos usando a tag "a", mas adicionamos outras infromações dentro da tag, como "download" e "type". Arquivos em PDF não são mais baixados automaticamente pelo navegador Google Chrome, no navegador você é levado a outra página que te da a opção de baixar o arquivo. Já utilizando arquivos em ZIP ou 7z, eles são baixados automaticamente.</p> <p>Mas como fica a teg quando vamos como colocar um link para download? <br> Primeiro vamos ver como fica a tag para baixar PDF e depois para baixar ZIP.</p>
+
+    <p>1) &lt;a href="Livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte." type="application/pdf" target="_blank" rel="external">Baixar o livro em pdf.&lt;/a&gt;</p>
+
+    2) &lt;a href="Livro/10 - Ligações em toda parte.7z" download="10 - Ligações em toda parte.7z" type="application/7z">Livro compactado em zip.&lt;/a&gt;
+    <ul>
+        <li><a href="Livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte." type="application/pdf" target="_blank" rel="external">Baixar o livro em pdf.</a></li>
+        <li><a href="Livro/10 - Ligações em toda parte.7z" download="10 - Ligações em toda parte.7z" type="application/7z">Livro compactado em zip.</a></li>
+    </ul>
+
+
+
+
+</body>
+</html>

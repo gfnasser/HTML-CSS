@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Introdurção CSS</h1>
+    <p>A liguagem CSS é focado no estilo do site, como cores, fonte, tamanho da letras, dentre outras coisas.</p>
+    <h2>Estilo Inline</h2>
+    <p>No estilo inline, nós utilizamos as tags da CSS dentro dos paramentros do HTML, essa forma de utilizar o CSS não é aconselhavel, pois deixa o código uma bagunça, pois fica cheio de informações, e caso você precise fazer alguma alteração você terá que repetir o mesmo processo todas as vezes em cada tag, tornando improdutiva a utilização da linguagem CSS desta forma. Abaixo mostra como o código fica uma bagunça.</p> <br> <img src="inline.png" alt="estilo inline">
+    <p>O código fica cheio de informações e caso seja necessarios trocar as cores do "h2" por exemplo, você iria precisar trocar a de cada um manualmente. Por isso, não utilize o CSS Inline.</p>
+
+    <h2>Estilo local ou interno</h2>
+    <p>Já desta forma as coisas já ficam bem diferentes, pois nós não utilizamos o CSS dentro dos parametros do HTML, mas ao invez disso, usamos a tag "style" dentro de "head", que a cabeça do código. Assim, tudo que colocamos nele fica é automaticamente aplicado em cada tag, na imagem abaixo irá mostrar como fica:</p> <br> <img src="local ou interno.png" alt="estilo local ou interno">
+    <p>Como pode-se ver, nós colocamos dentro da tag "style" o formato e cores que queremos em cada tag e assim é aplicado automaticamente, e caso queira trocar a cor, a mudança da cor será aplicada automaticamente. Está é uma forma bem mais pratica de usar o CSS.</p>
+    <p>Mas ainda existe uma melhor e que ocupa menos espaço.</p>
+
+    <h2>Estilo externo</h2>
+    <p>Nesse estilo o código fica mais limpo, isso porque só é preciso colocar a tag "link:css" no "head" do código, após ter feito isso, basta clicar em cima dele e irá criar um novo arquivo, mas esse arquivo é só de estilo CSS. Na imagem abaixo iremos vermos como fica a tag dentro de "head" e também iremos ver o arquivo que é criado para o style css.</p>
+    <img src="externo1.png" alt="estilo externo1"> <br> <img src="externo2.png" alt="externo2">
+    <p>Perceba que na 1º  linha foi colocado "@charset "UTF-8", isso é uma REGRA, ela serve para entender as pontuações e sinais, mais pra frente será explicado o conceito das regras.</p>
+    <p>Vale lembrar que caso você queira mudar o formato especifico de uma tag, basta você utilizar o estilo inline naquela tag.</p>
+    <p>Outro detalhe importante é que pode colocar mais de um "link:css" no código.</p>
+
+    <p style="text-align: center;"><a href="estudos.html">Retornar para HTML5</a></p>
+
+</body>
+</html>
