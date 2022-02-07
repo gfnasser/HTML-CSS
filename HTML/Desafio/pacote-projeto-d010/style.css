@@ -38,15 +38,15 @@ nav{
     padding-top: 5px;
 }
 nav > a{
-    margin-right: 30px;
-    margin-left: 20px;
+    padding: 10px;
+    border-radius: 5px;
     text-decoration: none;
     color: white;
     font-family: 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
 }
-.cab > a:hover{
-    background-color: green;
+nav > a:hover{
+    background-color: rgba(0, 161, 0, 0.74);
     /*não consegui fazer, foi triste*/
 }
 main{
